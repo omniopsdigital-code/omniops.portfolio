@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOTA Speaks — Case Study · OmniOps Digital</title>
+  <meta name="description" content="How OmniOps Digital designed and developed the NOTA Speaks civic education platform — an NGO focused on legal awareness, constitutional literacy and democratic participation.">
+  <meta name="theme-color" content="#526766">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/src/case-study.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><i></i></div>
+
+  <!-- Nav -->
+  <header class="top" id="top-bar">
+    <a class="brand" href="/" aria-label="OmniOps Digital home">
+      <span class="brand-symbol" aria-hidden="true">O</span>
+      <span>OmniOps <b>Digital</b></span>
+    </a>
+    <span class="nav-crumb">Case study 01</span>
+    <nav aria-label="All projects" id="main-nav">
+      <a href="/">Home</a>
+      <a href="/nota-speaks.html" aria-current="page">NOTA Speaks</a>
+      <a href="/sara-legal.html">Sara Legal</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <nav>
+      <a href="/">Home</a>
+      <a href="/nota-speaks.html">NOTA Speaks</a>
+      <a href="/sara-legal.html">Sara Legal</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Rail -->
+  <nav class="rail" aria-label="Sections of this case study">
+    <ol>
+      <li><a href="#cover" data-rail="cover"><i></i><span>1. Overview</span></a></li>
+      <li><a href="#background" data-rail="background"><i></i><span>2. Background</span></a></li>
+      <li><a href="#challenge" data-rail="challenge"><i></i><span>3. Challenge</span></a></li>
+      <li><a href="#objectives" data-rail="objectives"><i></i><span>4. Objectives</span></a></li>
+      <li><a href="#design" data-rail="design"><i></i><span>5. Design</span></a></li>
+      <li><a href="#architecture" data-rail="architecture"><i></i><span>6. Architecture</span></a></li>
+      <li><a href="#development" data-rail="development"><i></i><span>7. Development</span></a></li>
+      <li><a href="#features" data-rail="features"><i></i><span>8. Features</span></a></li>
+      <li><a href="#technology" data-rail="technology"><i></i><span>9. Technology</span></a></li>
+      <li><a href="#outcomes" data-rail="outcomes"><i></i><span>10. Outcomes</span></a></li>
+    </ol>
+  </nav>
+
+  <main id="main">
+    <article>
+
+      <!-- ── COVER ── -->
+      <section class="case-cover on-dark" id="cover" data-hero>
+        <div class="hero-photo" style="background-image:url('/images/nota-cover.jpg')" aria-hidden="true"></div>
+        <div class="blob b1" data-depth="26" aria-hidden="true" style="background:radial-gradient(circle at 40%40%,#C27A5C,transparent 70%);opacity:.3"></div>
+        <div class="blob b2" data-depth="-18" aria-hidden="true" style="background:radial-gradient(circle at 60%40%,#E7D0D2,transparent 70%);opacity:.2"></div>
+        <div class="wrap">
+          <div class="cover-layout">
+            <div class="cover-copy">
+              <p class="eyebrow" data-reveal>Case study 01 · NGO / Social Impact</p>
+              <h1 data-reveal style="--d:.08s">NOTA <em>Speaks</em></h1>
+              <p class="lead" data-reveal style="--d:.16s">Civic education platform for legal awareness, constitutional literacy and democratic participation — designed and developed by OmniOps Digital.</p>
+              <div class="case-byline" data-reveal style="--d:.24s">
+                <span class="case-byline-faces">
+                  <span class="face-ph">D</span>
+                  <span class="face-ph" style="background:var(--duck);color:var(--min)">V</span>
+                </span>
+                <span>By Divyanshi (Founder) & Vedansh (Co-Founder)</span>
+              </div>
+              <a class="btn solid" href="https://notaspeaks.com" target="_blank" rel="noopener noreferrer" data-reveal style="--d:.30s">
+                Visit live website <span class="arr">↗</span>
+              </a>
+            </div>
+            <div class="cover-orbit" data-reveal="zoom" style="--d:.2s">
+              <div class="orbit-core">
+                <span class="orbit-name">NOTA Speaks</span>
+                <small>notaspeaks.com</small>
+              </div>
+              <div class="orbit-ring r1">
+                <div class="orbit-sat" style="--a:0deg"><div class="orbit-pt"><a class="orbit-chip" href="#features">Knowledge Hub</a></div></div>
+                <div class="orbit-sat" style="--a:120deg"><div class="orbit-pt"><a class="orbit-chip" href="#design">Web Design</a></div></div>
+                <div class="orbit-sat" style="--a:240deg"><div class="orbit-pt"><a class="orbit-chip" href="#development">Dashboard</a></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-down" href="#background" aria-label="Scroll to background"><span></span></a>
+      </section>
+
+      <!-- ── BACKGROUND ── -->
+      <section class="layer bg-sea" id="background">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="num">01 · Client background</span>
+            <h2 class="h2" data-reveal>Where the <em>story starts.</em></h2>
+          </div>
+          <div class="two-col">
+            <div>
+              <p class="lead" data-reveal>NOTA Speaks is an independent, citizen-led platform focused on civic education and democratic participation in India.</p>
+              <p data-reveal style="--d:.08s">The organisation was founded with a clear mission: <em>An informed citizen is the king of democracy.</em> NOTA Speaks creates content and resources around legal awareness, constitutional literacy, and the rights and responsibilities of Indian citizens.</p>
+              <p data-reveal style="--d:.12s">The platform needed a digital home that matched the seriousness and clarity of its mission — a place where citizens could learn, engage, and understand their role in a democracy.</p>
+            </div>
+            <div class="facts-grid" data-reveal="zoom">
+              <div class="fact-card">
+                <span class="fact-label">Organisation type</span>
+                <span class="fact-value">Independent civic education platform</span>
+              </div>
+              <div class="fact-card">
+                <span class="fact-label">Category</span>
+                <span class="fact-value">NGO / Social Impact</span>
+              </div>
+              <div class="fact-card">
+                <span class="fact-label">Focus</span>
+                <span class="fact-value">Legal Awareness, Constitutional Literacy</span>
+              </div>
+              <div class="fact-card">
+                <span class="fact-label">Live website</span>
+                <span class="fact-value"><a href="https://notaspeaks.com" target="_blank" rel="noopener noreferrer" style="color:var(--terra)">notaspeaks.com ↗</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CHALLENGE ── -->
+      <section class="layer bg-min on-dark" id="challenge">
+        <div class="hero-photo" style="opacity:.08;background-image:url('/images/nota-cover.jpg')"></div>
+        <div class="blob" style="width:36vmax;height:36vmax;right:-8vmax;top:-8vmax;background:radial-gradient(circle,var(--terra),transparent 65%);opacity:.22"></div>
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="num" style="color:color-mix(in srgb,var(--sea) 60%,transparent)">02 · The challenge</span>
+            <h2 class="h2" data-reveal>Building trust in <em style="color:var(--terra-light)">civic information</em> online.</h2>
+          </div>
+          <div class="fan" data-fan role="list">
+            <button type="button" class="fan-panel open" role="listitem" aria-expanded="true" data-fan-item data-reveal style="--d:0s">
+              <span class="fan-num">01</span>
+              <b>No dedicated platform</b>
+              <span class="fan-detail">Civic education content was scattered across social media — difficult to find, easy to miss, and without structured learning pathways.</span>
+            </button>
+            <button type="button" class="fan-panel" role="listitem" aria-expanded="false" data-fan-item data-reveal style="--d:.08s">
+              <span class="fan-num">02</span>
+              <b>Building credibility from scratch</b>
+              <span class="fan-detail">As a new organisation, NOTA Speaks needed to establish trust and authority in a space where misinformation is common.</span>
+            </button>
+            <button type="button" class="fan-panel" role="listitem" aria-expanded="false" data-fan-item data-reveal style="--d:.16s">
+              <span class="fan-num">03</span>
+              <b>Reaching diverse audiences</b>
+              <span class="fan-detail">The platform needed to serve citizens with varying levels of legal knowledge — from first-time voters to law students and activists.</span>
+            </button>
+            <button type="button" class="fan-panel" role="listitem" aria-expanded="false" data-fan-item data-reveal style="--d:.24s">
+              <span class="fan-num">04</span>
+              <b>Informational, not operational</b>
+              <span class="fan-detail">The website is intended to inform and educate — not to claim that backend functionality such as dashboards is currently in active public use.</span>
+            </button>
+          </div>
+          <p class="fan-hint">Select a card to read more.</p>
+        </div>
+      </section>
+
+      <!-- ── OBJECTIVES ── -->
+      <section class="layer bg-sea" id="objectives" data-seg-root>
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="num">03 · Project objectives</span>
+            <h2 class="h2" data-reveal>What we set out <em>to achieve.</em></h2>
+            <p class="lead" data-reveal style="--d:.08s">Each objective is paired with the design or development decision it shaped.</p>
+          </div>
+          <div class="seg-controls" data-reveal>
+            <button type="button" class="pillbtn" data-seg="goal" aria-pressed="true">Objective</button>
+            <button type="button" class="pillbtn" data-seg="approach" aria-pressed="false">Our approach</button>
+          </div>
+          <ol class="objectives-list">
+            <li data-reveal style="--d:0s">
+              <span class="obj-num">1</span>
+              <div>
+                <p data-seg-text="goal" class="obj-text">Create a professional digital home for civic education</p>
+                <p data-seg-text="approach" hidden class="obj-text">Designed a clean, editorial layout inspired by trusted informational platforms — avoiding social media clutter and noise.</p>
+              </div>
+            </li>
+            <li data-reveal style="--d:.07s">
+              <span class="obj-num">2</span>
+              <div>
+                <p data-seg-text="goal" class="obj-text">Make legal knowledge accessible to ordinary citizens</p>
+                <p data-seg-text="approach" hidden class="obj-text">Built a structured knowledge hub with categories, clear navigation, and plain-language content presentation.</p>
+              </div>
+            </li>
+            <li data-reveal style="--d:.14s">
+              <span class="obj-num">3</span>
+              <div>
+                <p data-seg-text="goal" class="obj-text">Present the organisation's team and campaigns credibly</p>
+                <p data-seg-text="approach" hidden class="obj-text">Created dedicated team and campaign sections with editorial photography and structured biography formats.</p>
+              </div>
+            </li>
+            <li data-reveal style="--d:.21s">
+              <span class="obj-num">4</span>
+              <div>
+                <p data-seg-text="goal" class="obj-text">Build an administrative infrastructure for content management</p>
+                <p data-seg-text="approach" hidden class="obj-text">Developed an administrative dashboard as part of the project scope. The current public-facing website is informational.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ── DESIGN ── -->
+      <section class="layer bg-duck" id="design">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="num">04 · Design direction</span>
+            <h2 class="h2" data-reveal>Serious, <em>clear</em> and human.</h2>
+            <p class="lead" data-reveal style="--d:.08s">The visual language of NOTA Speaks needed to feel credible and trustworthy without being cold or bureaucratic.</p>
+          </div>
+          <div class="two-col">
+            <div class="design-principles" data-reveal="zoom">
+              <div class="principle-card">
+                <span class="principle-num">01</span>
+                <h3>Editorial typography</h3>
+                <p>Display serif for headings combined with a clean sans-serif body font — borrowed from quality journalism.</p>
+              </div>
+              <div class="principle-card">
+                <span class="principle-num">02</span>
+                <h3>Restrained colour</h3>
+                <p>A disciplined palette: deep navy or dark teal for authority, a warm accent for calls to action, ample white space.</p>
+              </div>
+              <div class="principle-card">
+                <span class="principle-num">03</span>
+                <h3>Content-first layout</h3>
+                <p>No decorative noise. Every layout decision serves the reading experience — hierarchy, flow and clarity above all.</p>
+              </div>
+              <div class="principle-card">
+                <span class="principle-num">04</span>
+                <h3>Accessible by default</h3>
+                <p>WCAG-compliant contrast, semantic HTML, keyboard navigation, screen reader support built in from the start.</p>
+              </div>
+            </div>
+            <div>
+              <div class="client-identity" data-reveal style="--d:.1s">
+                <div>
+                  <div class="client-identity-name">NOTA Speaks</div>
+                  <div class="client-identity-tag">Civic Education Platform · Est. 2025</div>
+                </div>
+              </div>
+              <blockquote class="case-quote" data-reveal style="--d:.15s">
+                <p>"An informed citizen is the king of democracy."</p>
+                <cite>NOTA Speaks — Mission Statement</cite>
+              </blockquote>
+              <a href="https://notaspeaks.com" target="_blank" rel="noopener noreferrer" class="site-preview" data-reveal style="--d:.2s">
+                <span class="site-preview-dot"></span>
+                Visit notaspeaks.com ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── ARCHITECTURE ── -->
+      <section class="layer bg-sea" id="architecture">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="num">05 · Information architecture</span>
+            <h2 class="h2" data-reveal>A clear map for <em>every visitor.</em></h2>
+          </div>
+          <div class="two-col">
+            <div data-reveal>
+              <p class="lead">The website is structured around the visitor's journey — from first impression to deep engagement with content.</p>
+              <p>Every primary navigation item answers a question the visitor arrives with: <em>Who is this? What can I learn here? How can I get involved?</em></p>
+            </div>
+            <div class="ia-map" data-reveal="zoom">
+              <div class="ia-node root">NOTA Speaks</div>
+              <div class="ia-branches">
+                <div class="ia-node">Homepage</div>
+                <div class="ia-node">About</div>
+                <div class="ia-node accent">Knowledge Hub</div>
+                <div class="ia-node">Campaigns</div>
+                <div class="ia-node">Team</div>
+                <div class="ia-node">Contact</div>
+              </div>
+            </div>
+          </div>
+          <div class="deliverables-grid" data-reveal="zoom" style="margin-top:3rem">
+            <div class="deliverable"><span class="deliverable-dot"></span><span>Homepage with mission and featured content</span></div>
+            <div class="deliverable"><span class="deliverable-dot"></span><span>About section — organisation story</span></div>
+            <div class="deliverable"><span class="deliverable-dot"></span><span>Knowledge hub with categorised articles</span></div>
+            <div class="deliverable"><span class="deliverable-dot"></span><span>Campaign presentation pages</span></div>
+            <div class="deliverable"><span class="deliverable-dot"></span><span>Team member profiles</span></div>
+            <div class="deliverable"><span class="deliverable-dot"></span><span>Contact and engagement forms</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── DEVELOPMENT ── -->
+      <section class="layer bg-min on-dark" id="development">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="num" style="opacity:.6">06 · Development process</span>
+            <h2 class="h2" data-reveal>Built to <em style="color:var(--terra-light)">scale</em> with the mission.</h2>
+          </div>
+          <div class="dev-timeline" data-reveal="zoom">
+            <div class="timeline-item">
+              <span class="tl-num">01</span>
+              <div>
+                <h3>Discovery & planning</h3>
+                <p>Deep-dive into the organisation's mission, content strategy, and target audiences. Defined site architecture and content hierarchy.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="tl-num">02</span>
+              <div>
+                <h3>Design system</h3>
+                <p>Created a typography system, colour palette, and component library. Prototype tested with sample content before development began.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="tl-num">03</span>
+              <div>
+                <h3>Frontend development</h3>
+                <p>Built with React (Vite) for performance and maintainability. Responsive layouts with smooth scroll interactions and micro-animations.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="tl-num">04</span>
+              <div>
+                <h3>Administrative dashboard</h3>
+                <p>Developed a backend administrative interface as part of the project scope to support content management and organisational operations. The current public-facing website is informational and does not represent live operational status of all backend features.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="tl-num">05</span>
+              <div>
+                <h3>Launch & SEO</h3>
+                <p>Full meta implementation, structured data (Schema.org), image optimisation and accessibility audit before launch.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── KEY FEATURES ── -->
+      <section class="layer bg-sour" id="features">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="num">07 · Key pages & features</span>
+            <h2 class="h2" data-reveal>Every section <em>earns its place.</em></h2>
+          </div>
+          <div class="features-tabs" data-tabs>
+            <div class="features-tablist" role="tablist" aria-label="Key features">
+              <button type="button" class="pillbtn" role="tab" aria-selected="true" data-tab="homepage">Homepage</button>
+              <button type="button" class="pillbtn" role="tab" aria-selected="false" data-tab="hub">Knowledge Hub</button>
+              <button type="button" class="pillbtn" role="tab" aria-selected="false" data-tab="campaigns">Campaigns</button>
+              <button type="button" class="pillbtn" role="tab" aria-selected="false" data-tab="dashboard">Dashboard</button>
+            </div>
+            <div class="features-panels">
+              <div role="tabpanel" data-panel="homepage">
+                <h3>Homepage</h3>
+                <p>A strong editorial hero that immediately communicates the mission. Featured articles draw visitors into the knowledge hub. Clear calls to action for involvement and social following.</p>
+                <ul class="feature-list">
+                  <li>Mission statement hero with animated text</li>
+                  <li>Featured content carousel</li>
+                  <li>Organisation statistics</li>
+                  <li>Social media feed integration</li>
+                </ul>
+              </div>
+              <div role="tabpanel" data-panel="hub" hidden>
+                <h3>Knowledge Hub</h3>
+                <p>A structured library of articles, explainers and resources across civic education categories. Designed to be searchable, filterable, and easy to share.</p>
+                <ul class="feature-list">
+                  <li>Category-based content organisation</li>
+                  <li>Search and filter functionality</li>
+                  <li>Article series and reading paths</li>
+                  <li>Social sharing and bookmarking</li>
+                </ul>
+              </div>
+              <div role="tabpanel" data-panel="campaigns" hidden>
+                <h3>Campaigns</h3>
+                <p>Dedicated campaign pages that present civic initiatives with storytelling-driven layouts — photography, key messages, timelines and calls to action.</p>
+                <ul class="feature-list">
+                  <li>Campaign overview and objectives</li>
+                  <li>Progress indicators</li>
+                  <li>Supporter and partner recognition</li>
+                  <li>Action and involvement CTAs</li>
+                </ul>
+              </div>
+              <div role="tabpanel" data-panel="dashboard" hidden>
+                <h3>Administrative Dashboard</h3>
+                <p>An internal administrative interface developed as part of the project scope. This dashboard supports content management and organisational operations.</p>
+                <p><strong>Important:</strong> The current public-facing NOTA Speaks website is informational. The administrative dashboard was developed as part of the project; it does not represent currently live or publicly accessible backend functionality.</p>
+                <ul class="feature-list">
+                  <li>Content management interface</li>
+                  <li>Article publishing workflow</li>
+                  <li>Team and member management</li>
+                  <li>Campaign tracking tools</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── TECHNOLOGY ── -->
+      <section class="layer bg-sea" id="technology">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="num">08 · Technology stack</span>
+            <h2 class="h2" data-reveal>Built on <em>solid foundations.</em></h2>
+          </div>
+          <div class="two-col">
+            <div data-reveal>
+              <p class="lead">Technology choices were made for performance, maintainability, and the organisation's long-term ability to manage content independently.</p>
+              <ul class="tech-list" style="margin-top:2rem">
+                <li>React (Vite)</li>
+                <li>JavaScript</li>
+                <li>CSS / Vanilla CSS</li>
+                <li>Schema.org structured data</li>
+                <li>Google Fonts</li>
+                <li>Responsive images</li>
+                <li>Open Graph metadata</li>
+                <li>WCAG accessibility</li>
+              </ul>
+            </div>
+            <div class="tech-rationale" data-reveal="right">
+              <div class="tech-card">
+                <h4>React + Vite</h4>
+                <p>Component-based architecture for reusability and performance. Vite provides fast build times and excellent developer experience.</p>
+              </div>
+              <div class="tech-card">
+                <h4>SEO & structured data</h4>
+                <p>Full Schema.org implementation, Open Graph tags, and canonical URLs ensure the platform is discoverable by the audiences it serves.</p>
+              </div>
+              <div class="tech-card">
+                <h4>Performance</h4>
+                <p>Image optimisation, lazy loading, and minimal third-party dependencies keep page load times fast even on lower-end devices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── OUTCOMES ── -->
+      <section class="layer bg-duck" id="outcomes">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="num">09 · Deliverables & outcomes</span>
+            <h2 class="h2" data-reveal>What we <em>delivered.</em></h2>
+          </div>
+          <div class="deliverables-grid" data-reveal="zoom">
+            <div class="deliverable"><span class="deliverable-dot"></span><span>Full website design and development</span></div>
+            <div class="deliverable"><span class="deliverable-dot"></span><span>Responsive across all devices</span></div>
+            <div class="deliverable"><span class="deliverable-dot"></span><span>Knowledge hub with content system</span></div>
+            <div class="deliverable"><span class="deliverable-dot"></span><span>Campaign presentation pages</span></div>
+            <div class="deliverable"><span class="deliverable-dot"></span><span>Team member profiles</span></div>
+            <div class="deliverable"><span class="deliverable-dot"></span><span>Administrative dashboard (project scope)</span></div>
+            <div class="deliverable"><span class="deliverable-dot"></span><span>SEO implementation and metadata</span></div>
+            <div class="deliverable"><span class="deliverable-dot"></span><span>Accessibility compliance (WCAG)</span></div>
+            <div class="deliverable"><span class="deliverable-dot"></span><span>Schema.org structured data</span></div>
+            <div class="deliverable"><span class="deliverable-dot"></span><span>Open Graph social sharing</span></div>
+          </div>
+          <div class="next-project" data-reveal style="margin-top:4rem">
+            <p class="eyebrow">Next project</p>
+            <a href="/sara-legal.html" class="next-project-link">
+              Sara Legal Solutions <span class="arr">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="foot on-dark">
+    <div class="wrap foot-row">
+      <p>© 2026 OmniOps Digital</p>
+      <nav aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="mailto:omniopsdigital@gmail.com">omniopsdigital@gmail.com</a>
+        <a href="https://www.instagram.com/omniops_digital/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
