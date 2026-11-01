@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A6FA8;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#3B95CC;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#7ABDE0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A8D4EC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="rooftop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4D8DC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8BEC4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tankBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E8ECF0;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#F5F7FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C8D0D8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tankTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8FAFB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DCE4EC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tankShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1A4A6A;stop-opacity:0.25" />
+      <stop offset="100%" style="stop-color:#1A4A6A;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="pipe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#B0B8C0;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#D8E0E8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#90A0B0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="building" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C4CCD4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D8E0E8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8C0C8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A9FCC;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#1A6FA8;stop-opacity:0.7" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="tankGlow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="-8" dy="4" stdDeviation="12" flood-color="#FFFFFF" flood-opacity="0.4"/>
+    </filter>
+    <radialGradient id="sunGlow" cx="80%" cy="15%" r="25%">
+      <stop offset="0%" style="stop-color:#FFF8E0;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#FFE080;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#FFE080;stop-opacity:0" />
+    </radialGradient>
+    <clipPath id="tankClip">
+      <rect x="370" y="210" width="460" height="310" rx="30"/>
+    </clipPath>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="1200" height="675" fill="url(#sky)"/>
+
+  <!-- Sun glow in upper right -->
+  <circle cx="960" cy="90" r="55" fill="#FFF8D0" opacity="0.95"/>
+  <circle cx="960" cy="90" r="80" fill="#FFE880" opacity="0.3"/>
+  <circle cx="960" cy="90" r="120" fill="#FFE880" opacity="0.15"/>
+  <rect width="1200" height="675" fill="url(#sunGlow)"/>
+
+  <!-- Clouds -->
+  <g opacity="0.85">
+    <!-- Cloud 1 -->
+    <ellipse cx="200" cy="120" rx="90" ry="35" fill="white"/>
+    <ellipse cx="160" cy="125" rx="60" ry="28" fill="white"/>
+    <ellipse cx="245" cy="118" rx="65" ry="30" fill="white"/>
+    <ellipse cx="200" cy="130" rx="80" ry="25" fill="#F0F5FA"/>
+    <!-- Cloud 2 -->
+    <ellipse cx="780" cy="80" rx="70" ry="28" fill="white" opacity="0.9"/>
+    <ellipse cx="750" cy="84" rx="50" ry="22" fill="white" opacity="0.9"/>
+    <ellipse cx="820" cy="78" rx="55" ry="24" fill="white" opacity="0.9"/>
+    <!-- Cloud 3 smaller -->
+    <ellipse cx="420" cy="55" rx="45" ry="18" fill="white" opacity="0.7"/>
+    <ellipse cx="400" cy="58" rx="32" ry="15" fill="white" opacity="0.7"/>
+    <ellipse cx="455" cy="53" rx="35" ry="16" fill="white" opacity="0.7"/>
+  </g>
+
+  <!-- Background building / architecture -->
+  <rect x="0" y="350" width="1200" height="325" fill="url(#building)"/>
+
+  <!-- Rooftop terrace surface -->
+  <rect x="0" y="430" width="1200" height="245" fill="url(#rooftop)"/>
+  <!-- Terrace grid pattern -->
+  <g stroke="#C0C8D0" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="480" x2="1200" y2="480"/>
+    <line x1="0" y1="530" x2="1200" y2="530"/>
+    <line x1="0" y1="580" x2="1200" y2="580"/>
+    <line x1="0" y1="630" x2="1200" y2="630"/>
+    <line x1="100" y1="430" x2="100" y2="675"/>
+    <line x1="200" y1="430" x2="200" y2="675"/>
+    <line x1="300" y1="430" x2="300" y2="675"/>
+    <line x1="400" y1="430" x2="400" y2="675"/>
+    <line x1="500" y1="430" x2="500" y2="675"/>
+    <line x1="600" y1="430" x2="600" y2="675"/>
+    <line x1="700" y1="430" x2="700" y2="675"/>
+    <line x1="800" y1="430" x2="800" y2="675"/>
+    <line x1="900" y1="430" x2="900" y2="675"/>
+    <line x1="1000" y1="430" x2="1000" y2="675"/>
+    <line x1="1100" y1="430" x2="1100" y2="675"/>
+  </g>
+
+  <!-- Tank support structure / stand -->
+  <g fill="#A0ACBC" stroke="#8090A0" stroke-width="1">
+    <!-- Left leg -->
+    <rect x="430" y="370" width="18" height="68" rx="4"/>
+    <!-- Right leg -->
+    <rect x="752" y="370" width="18" height="68" rx="4"/>
+    <!-- Cross brace -->
+    <rect x="430" y="390" width="340" height="10" rx="3"/>
+    <line x1="435" y1="370" x2="765" y2="430" stroke="#8090A0" stroke-width="5" opacity="0.6"/>
+    <line x1="765" y1="370" x2="435" y2="430" stroke="#8090A0" stroke-width="5" opacity="0.6"/>
+    <!-- Feet pads -->
+    <rect x="418" y="432" width="42" height="10" rx="3"/>
+    <rect x="740" y="432" width="42" height="10" rx="3"/>
+  </g>
+
+  <!-- Main tank body - large overhead water tank -->
+  <g filter="url(#tankGlow)">
+    <!-- Tank shadow on rooftop -->
+    <ellipse cx="600" cy="450" rx="240" ry="25" fill="#1A3A5A" opacity="0.18"/>
+
+    <!-- Tank bottom dome -->
+    <ellipse cx="600" cy="430" rx="235" ry="35" fill="#D0D8E0"/>
+
+    <!-- Main cylindrical body -->
+    <rect x="365" y="180" width="470" height="255" fill="url(#tankBody)"/>
+
+    <!-- Highlight stripe - light reflection -->
+    <rect x="420" y="185" width="80" height="245" fill="white" opacity="0.25" rx="8"/>
+    <rect x="510" y="185" width="20" height="245" fill="white" opacity="0.12"/>
+
+    <!-- Shadow side -->
+    <rect x="735" y="180" width="100" height="255" fill="url(#tankShadow)" rx="0"/>
+
+    <!-- Tank top dome -->
+    <ellipse cx="600" cy="182" rx="235" ry="40" fill="url(#tankTop)"/>
+    <!-- Top dome highlight -->
+    <ellipse cx="560" cy="172" rx="120" ry="20" fill="white" opacity="0.45"/>
+
+    <!-- Horizontal band markings on tank -->
+    <rect x="365" y="265" width="470" height="6" fill="#C0CBD5" opacity="0.6"/>
+    <rect x="365" y="335" width="470" height="6" fill="#C0CBD5" opacity="0.5"/>
+    <rect x="365" y="390" width="470" height="4" fill="#C0CBD5" opacity="0.45"/>
+
+    <!-- Company color accent band -->
+    <rect x="365" y="292" width="470" height="35" fill="#1A6FA8" opacity="0.15"/>
+
+    <!-- Vent cap on top -->
+    <ellipse cx="600" cy="145" rx="30" ry="12" fill="#C8D0D8"/>
+    <rect x="586" y="130" width="28" height="20" rx="6" fill="#B0BCC8"/>
+    <ellipse cx="600" cy="130" rx="18" ry="8" fill="#C8D4DC"/>
+  </g>
+
+  <!-- Outlet pipe from tank -->
+  <g>
+    <rect x="710" y="340" width="80" height="14" rx="7" fill="url(#pipe)"/>
+    <rect x="782" y="335" width="14" height="80" rx="7" fill="url(#pipe)"/>
+    <!-- Water flow indicator -->
+    <ellipse cx="789" cy="418" rx="7" ry="4" fill="#4A9FCC" opacity="0.7"/>
+    <!-- Water droplets -->
+    <ellipse cx="789" cy="432" rx="4" ry="6" fill="url(#water)" opacity="0.8"/>
+    <ellipse cx="783" cy="445" rx="3" ry="5" fill="url(#water)" opacity="0.6"/>
+    <ellipse cx="795" cy="450" rx="3" ry="4" fill="url(#water)" opacity="0.5"/>
+  </g>
+
+  <!-- Inlet pipe left side -->
+  <rect x="365" y="240" width="14" height="120" rx="7" fill="url(#pipe)" transform="translate(-80 0)"/>
+  <rect x="249" y="240" width="120" height="14" rx="7" fill="url(#pipe)"/>
+
+  <!-- Overflow pipe -->
+  <rect x="795" y="230" width="14" height="90" rx="7" fill="url(#pipe)" transform="translate(80 0)"/>
+  <rect x="875" y="230" width="100" height="14" rx="7" fill="url(#pipe)"/>
+
+  <!-- Background architectural details - parapet walls -->
+  <rect x="0" y="420" width="340" height="20" rx="4" fill="#C8D0D8"/>
+  <rect x="860" y="420" width="340" height="20" rx="4" fill="#C8D0D8"/>
+
+  <!-- Small plants on rooftop (architectural detail) -->
+  <g opacity="0.7">
+    <rect x="120" y="395" width="25" height="30" rx="4" fill="#8B9B6A"/>
+    <ellipse cx="132" cy="390" rx="22" ry="18" fill="#6B8A4A"/>
+    <ellipse cx="120" cy="393" rx="14" ry="12" fill="#7A9A5A"/>
+    <ellipse cx="144" cy="391" rx="15" ry="13" fill="#7A9A5A"/>
+
+    <rect x="1040" y="400" width="22" height="25" rx="4" fill="#8B9B6A"/>
+    <ellipse cx="1051" cy="396" rx="19" ry="15" fill="#6B8A4A"/>
+    <ellipse cx="1040" cy="398" rx="12" ry="11" fill="#7A9A5A"/>
+    <ellipse cx="1062" cy="397" rx="13" ry="12" fill="#7A9A5A"/>
+  </g>
+
+  <!-- Atmospheric light rays from sun -->
+  <g opacity="0.08">
+    <line x1="960" y1="90" x2="200" y2="675" stroke="#FFE880" stroke-width="60"/>
+    <line x1="960" y1="90" x2="600" y2="675" stroke="#FFE880" stroke-width="40"/>
+    <line x1="960" y1="90" x2="1000" y2="675" stroke="#FFE880" stroke-width="30"/>
+  </g>
+
+  <!-- Subtle blue tint overlay for sky/atmosphere -->
+  <rect width="1200" height="250" fill="url(#sky)" opacity="0.15"/>
+
+  <!-- Bottom edge ground shadow -->
+  <rect x="0" y="630" width="1200" height="45" fill="#90A0B0" opacity="0.2"/>
+</svg>

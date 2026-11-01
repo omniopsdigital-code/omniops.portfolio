@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5EDE4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#EDD9C8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E8C9B5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fabric1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C47B5E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A0614A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fabric2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B9B7A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B7D5C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fabric3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C9A8B5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A8788A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fabric4" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8D5A0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C9A85C;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="4" stdDeviation="8" flood-color="#00000025" />
+    </filter>
+    <filter id="softShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="3" stdDeviation="5" flood-color="#00000018" />
+    </filter>
+    <pattern id="weave" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none"/>
+      <line x1="0" y1="4" x2="8" y2="4" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <line x1="4" y1="0" x2="4" y2="8" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    </pattern>
+    <pattern id="linen" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <line x1="0" y1="2" x2="4" y2="2" stroke="rgba(180,140,100,0.12)" stroke-width="0.5"/>
+      <line x1="2" y1="0" x2="2" y2="4" stroke="rgba(180,140,100,0.08)" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background - warm linen surface -->
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#linen)"/>
+
+  <!-- Subtle warm light from upper right -->
+  <radialGradient id="light" cx="75%" cy="20%" r="55%">
+    <stop offset="0%" style="stop-color:#FFF8F0;stop-opacity:0.5" />
+    <stop offset="100%" style="stop-color:#FFF8F0;stop-opacity:0" />
+  </radialGradient>
+  <rect width="1200" height="675" fill="url(#light)"/>
+
+  <!-- Large terracotta dupatta / fabric swatch - main anchor piece -->
+  <g filter="url(#shadow)">
+    <path d="M 80 120 Q 200 80 380 150 Q 520 200 600 280 Q 660 340 580 420 Q 480 500 320 460 Q 160 420 90 320 Q 40 240 80 120 Z" 
+          fill="url(#fabric1)" opacity="0.92"/>
+    <rect x="80" y="120" width="0" height="0" fill="none"/>
+    <!-- Embroidery pattern on dupatta -->
+    <circle cx="200" cy="220" r="20" fill="none" stroke="#E8A87A" stroke-width="2" opacity="0.6"/>
+    <circle cx="200" cy="220" r="10" fill="none" stroke="#E8A87A" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="200" cy="220" r="4" fill="#E8A87A" opacity="0.5"/>
+    <circle cx="320" cy="300" r="25" fill="none" stroke="#E8A87A" stroke-width="2" opacity="0.5"/>
+    <circle cx="320" cy="300" r="12" fill="none" stroke="#E8A87A" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="420" cy="240" r="18" fill="none" stroke="#E8A87A" stroke-width="1.5" opacity="0.5"/>
+    <!-- Fabric texture overlay -->
+    <path d="M 80 120 Q 200 80 380 150 Q 520 200 600 280 Q 660 340 580 420 Q 480 500 320 460 Q 160 420 90 320 Q 40 240 80 120 Z" 
+          fill="url(#weave)" opacity="0.3"/>
+  </g>
+
+  <!-- Sage green fabric swatch - overlapping -->
+  <g filter="url(#shadow)">
+    <path d="M 500 60 Q 650 40 780 100 Q 900 160 940 280 Q 970 380 880 440 Q 780 490 650 450 Q 520 400 480 300 Q 450 200 500 60 Z"
+          fill="url(#fabric2)" opacity="0.88"/>
+    <rect x="500" y="60" width="0" height="0" fill="none"/>
+    <!-- Block print pattern -->
+    <g opacity="0.4" stroke="#4A5C3A" stroke-width="1.5" fill="none">
+      <rect x="580" y="130" width="22" height="22" rx="2"/>
+      <rect x="614" y="130" width="22" height="22" rx="2"/>
+      <rect x="580" y="164" width="22" height="22" rx="2"/>
+      <rect x="614" y="164" width="22" height="22" rx="2"/>
+      <rect x="680" y="180" width="22" height="22" rx="2"/>
+      <rect x="714" y="180" width="22" height="22" rx="2"/>
+      <rect x="680" y="214" width="22" height="22" rx="2"/>
+      <rect x="714" y="214" width="22" height="22" rx="2"/>
+      <rect x="730" y="300" width="22" height="22" rx="2"/>
+      <rect x="764" y="300" width="22" height="22" rx="2"/>
+    </g>
+    <path d="M 500 60 Q 650 40 780 100 Q 900 160 940 280 Q 970 380 880 440 Q 780 490 650 450 Q 520 400 480 300 Q 450 200 500 60 Z"
+          fill="url(#weave)" opacity="0.25"/>
+  </g>
+
+  <!-- Dusty rose / blush fabric piece - smaller accent -->
+  <g filter="url(#softShadow)">
+    <ellipse cx="820" cy="520" rx="220" ry="120" transform="rotate(-15 820 520)" fill="url(#fabric3)" opacity="0.85"/>
+    <ellipse cx="820" cy="520" rx="220" ry="120" transform="rotate(-15 820 520)" fill="url(#weave)" opacity="0.2"/>
+    <!-- Delicate floral border -->
+    <g opacity="0.35" stroke="#8A5A72" fill="none" stroke-width="1">
+      <circle cx="720" cy="490" r="8"/>
+      <circle cx="740" cy="475" r="5"/>
+      <circle cx="760" cy="490" r="8"/>
+      <circle cx="780" cy="475" r="5"/>
+      <circle cx="800" cy="490" r="8"/>
+      <circle cx="820" cy="475" r="5"/>
+      <circle cx="840" cy="490" r="8"/>
+      <circle cx="860" cy="475" r="5"/>
+      <circle cx="880" cy="490" r="8"/>
+    </g>
+  </g>
+
+  <!-- Golden/mustard scarf corner -->
+  <g filter="url(#softShadow)">
+    <path d="M 900 380 Q 1000 340 1100 380 Q 1180 410 1160 520 Q 1140 600 1040 610 Q 940 615 900 560 Q 860 510 900 380 Z"
+          fill="url(#fabric4)" opacity="0.80"/>
+    <path d="M 900 380 Q 1000 340 1100 380 Q 1180 410 1160 520 Q 1140 600 1040 610 Q 940 615 900 560 Q 860 510 900 380 Z"
+          fill="url(#weave)" opacity="0.25"/>
+    <!-- Zari border lines -->
+    <g stroke="#B8862A" stroke-width="1.5" fill="none" opacity="0.45">
+      <path d="M 940 400 Q 1020 370 1100 400 Q 1160 425 1140 510"/>
+      <path d="M 955 415 Q 1030 385 1105 415 Q 1160 438 1140 520"/>
+    </g>
+  </g>
+
+  <!-- Statement jewellery piece - bangles cluster -->
+  <g filter="url(#softShadow)" transform="translate(160, 430)">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#C47B5E" stroke-width="8" opacity="0.9"/>
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#E8A87A" stroke-width="2" opacity="0.7"/>
+    <circle cx="10" cy="10" r="40" fill="none" stroke="#A0614A" stroke-width="7" opacity="0.8"/>
+    <circle cx="10" cy="10" r="40" fill="none" stroke="#C47B5E" stroke-width="2" opacity="0.6"/>
+    <circle cx="-8" cy="8" r="42" fill="none" stroke="#8B5040" stroke-width="5" opacity="0.7"/>
+    <!-- Bangle details -->
+    <circle cx="0" cy="-45" r="4" fill="#E8A87A" opacity="0.8"/>
+    <circle cx="0" cy="45" r="4" fill="#E8A87A" opacity="0.8"/>
+    <circle cx="45" cy="0" r="4" fill="#E8A87A" opacity="0.8"/>
+    <circle cx="-45" cy="0" r="4" fill="#E8A87A" opacity="0.8"/>
+  </g>
+
+  <!-- Small floral accessories -->
+  <g transform="translate(440, 500)" opacity="0.85">
+    <!-- Flower 1 -->
+    <circle cx="0" cy="0" r="12" fill="#D4A08A"/>
+    <ellipse cx="0" cy="-18" rx="8" ry="12" fill="#E8B89A" transform="rotate(0 0 0)"/>
+    <ellipse cx="0" cy="-18" rx="8" ry="12" fill="#E8B89A" transform="rotate(60 0 0)"/>
+    <ellipse cx="0" cy="-18" rx="8" ry="12" fill="#E8B89A" transform="rotate(120 0 0)"/>
+    <ellipse cx="0" cy="-18" rx="8" ry="12" fill="#E8B89A" transform="rotate(180 0 0)"/>
+    <ellipse cx="0" cy="-18" rx="8" ry="12" fill="#E8B89A" transform="rotate(240 0 0)"/>
+    <ellipse cx="0" cy="-18" rx="8" ry="12" fill="#E8B89A" transform="rotate(300 0 0)"/>
+    <circle cx="0" cy="0" r="8" fill="#C47B5E"/>
+    <!-- Flower 2 -->
+    <circle cx="50" cy="30" r="10" fill="#B59EA8"/>
+    <ellipse cx="50" cy="14" rx="7" ry="10" fill="#C9A8B5" transform="rotate(0 50 30)"/>
+    <ellipse cx="50" cy="14" rx="7" ry="10" fill="#C9A8B5" transform="rotate(72 50 30)"/>
+    <ellipse cx="50" cy="14" rx="7" ry="10" fill="#C9A8B5" transform="rotate(144 50 30)"/>
+    <ellipse cx="50" cy="14" rx="7" ry="10" fill="#C9A8B5" transform="rotate(216 50 30)"/>
+    <ellipse cx="50" cy="14" rx="7" ry="10" fill="#C9A8B5" transform="rotate(288 50 30)"/>
+    <circle cx="50" cy="30" r="6" fill="#A07882"/>
+  </g>
+
+  <!-- Scattered rose petals -->
+  <g opacity="0.6">
+    <ellipse cx="350" cy="550" rx="12" ry="7" fill="#D4A0A8" transform="rotate(-30 350 550)"/>
+    <ellipse cx="380" cy="560" rx="10" ry="6" fill="#C49098" transform="rotate(20 380 560)"/>
+    <ellipse cx="310" cy="540" rx="11" ry="6" fill="#D4A0A8" transform="rotate(-60 310 540)"/>
+    <ellipse cx="700" cy="90" rx="10" ry="6" fill="#D4A87A" transform="rotate(15 700 90)"/>
+    <ellipse cx="730" cy="75" rx="9" ry="5" fill="#C4946A" transform="rotate(-20 730 75)"/>
+    <ellipse cx="670" cy="100" rx="11" ry="6" fill="#D4A87A" transform="rotate(45 670 100)"/>
+    <ellipse cx="1080" cy="150" rx="10" ry="6" fill="#8BA07A" transform="rotate(-10 1080 150)"/>
+    <ellipse cx="1050" cy="140" rx="9" ry="5" fill="#7A9070" transform="rotate(30 1050 140)"/>
+  </g>
+
+  <!-- Artisan thread spool -->
+  <g transform="translate(1060, 250)" filter="url(#softShadow)">
+    <rect x="-25" y="-45" width="50" height="90" rx="8" fill="#D4A87A" opacity="0.9"/>
+    <rect x="-30" y="-50" width="60" height="15" rx="5" fill="#C4986A"/>
+    <rect x="-30" y="35" width="60" height="15" rx="5" fill="#C4986A"/>
+    <!-- Thread windings -->
+    <g stroke="#E8B880" stroke-width="2.5" fill="none" opacity="0.7">
+      <line x1="-25" y1="-20" x2="25" y2="-15"/>
+      <line x1="-25" y1="-10" x2="25" y2="-5"/>
+      <line x1="-25" y1="0" x2="25" y2="5"/>
+      <line x1="-25" y1="10" x2="25" y2="15"/>
+      <line x1="-25" y1="20" x2="25" y2="25"/>
+    </g>
+  </g>
+
+  <!-- Subtle warm vignette -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+    <stop offset="60%" style="stop-color:#00000000" />
+    <stop offset="100%" style="stop-color:#C4946A22" />
+  </radialGradient>
+  <rect width="1200" height="675" fill="url(#vignette)"/>
+</svg>
